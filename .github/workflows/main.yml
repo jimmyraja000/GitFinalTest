@@ -71,7 +71,7 @@ jobs:
           run: |
                # start-process PowerShell -verb runas 
                iisreset /stop
-               Copy-Item C:\actions-runner2\_work\GitFinalTest\GitFinalTest* C:\inetpub\wwwroot\GitFinalAcTest -Recurse -Force
+               Copy-Item C:\actions-runner2\_work\GitFinalTest\GitFinalTest\* C:\inetpub\wwwroot\GitFinalAcTest -Recurse -Force
                iisreset /start
           env:
            WEBAPP_MSDeploy_USERNAME: ${{secrets.IIS_USERNAME}}
