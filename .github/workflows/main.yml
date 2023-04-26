@@ -52,7 +52,7 @@ jobs:
 #   DeployDev:
 #        name: Dev
 #        needs: Build
-#  #       if: github.event_name == 'refs/heads/master'
+#         if: github.event_name == 'refs/heads/master'
 #        runs-on: self-hosted
 #  #       env:
 #  #         DEPLOYMENT_ENVIRONMENT: Dev
